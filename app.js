@@ -10,7 +10,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Handle root route and return index.html
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.send('Hello World!');
+    // res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // Start the server
